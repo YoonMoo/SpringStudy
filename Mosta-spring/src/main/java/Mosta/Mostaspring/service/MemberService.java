@@ -3,15 +3,19 @@ package Mosta.Mostaspring.service;
 import Mosta.Mostaspring.domain.Member;
 import Mosta.Mostaspring.repository.MemberRepository;
 import Mosta.Mostaspring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
     
     //private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemoryMemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
