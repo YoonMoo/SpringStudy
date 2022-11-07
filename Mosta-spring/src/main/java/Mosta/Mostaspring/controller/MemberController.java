@@ -22,6 +22,7 @@ public class MemberController {
     // 생성자에 autowired
     @Autowired
     public MemberController(MemberService memberService){
+
         this.memberService = memberService;
     }
 
