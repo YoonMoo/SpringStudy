@@ -33,6 +33,7 @@ class MemberServiceIntegrationTest {
 
 
     @Test
+    //@Commit -> DB에 적용
     void 회원가입() { // 테스트는 한글명으로도 많이한다(직관적). 빌드 시 포함되지 않음
         // given
         Member member = new Member();

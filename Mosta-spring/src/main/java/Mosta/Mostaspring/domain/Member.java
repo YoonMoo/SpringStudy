@@ -1,7 +1,13 @@
 package Mosta.Mostaspring.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Member {
+    
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) // DB가 알아서 생성해주는 형태
     private Long id;
+
     private String name;
 
     public Long getId() {
