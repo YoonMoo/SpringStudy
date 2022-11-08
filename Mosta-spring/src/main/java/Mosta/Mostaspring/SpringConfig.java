@@ -1,5 +1,6 @@
 package Mosta.Mostaspring;
 
+import Mosta.Mostaspring.repository.JdbcTemplateMemberRepository;
 import Mosta.Mostaspring.repository.MemberRepository;
 import Mosta.Mostaspring.repository.MemoryMemberRepository;
 import Mosta.Mostaspring.repository.jdbcMemberRepository;
@@ -30,6 +31,7 @@ public class SpringConfig {
     public MemberRepository memberRepository(){
 
         //return new MemoryMemberRepository();
-        return new jdbcMemberRepository(dataSource);
+        //return new jdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
