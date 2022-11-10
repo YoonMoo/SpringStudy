@@ -2,6 +2,7 @@ package Mosta.Mostaspring;
 
 import Mosta.Mostaspring.repository.*;
 import Mosta.Mostaspring.service.MemberService;
+import aop.TimeTraceAop;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
